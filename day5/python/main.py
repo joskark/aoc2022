@@ -13,9 +13,10 @@ stacks = {
     7: ['S', 'B', 'D', 'J', 'M', 'F', 'T', 'R'],
     8: ['L', 'H', 'R', 'B', 'T', 'V', 'M'],
     9: ['Q', 'P', 'D', 'S', 'V']
-    }
+}
 
 stacks2 = deepcopy(stacks)
+
 
 def part1(lines: List[str]) -> str:
 
@@ -27,9 +28,9 @@ def part1(lines: List[str]) -> str:
                 to_stack = int(new_line[5])
                 if len(stacks[from_stack]) > 0:
                     to_move = stacks[from_stack].pop()
-                    stacks[to_stack].append(to_move) 
+                    stacks[to_stack].append(to_move)
     return ''.join([value[-1] for _, value in stacks.items()])
-            
+
 
 def part2(lines: List[str]) -> str:
 
@@ -42,7 +43,8 @@ def part2(lines: List[str]) -> str:
             stacks2[to_stack] += to_move
             stacks2[from_stack] = stacks2[from_stack][:-int(new_line[1])]
     return ''.join([value[-1] for _, value in stacks2.items()])
-    
+
+
 with open(path, encoding="utf-8") as f:
     lines = f.read().split("\n")
     print(f'Part 1: {part1(lines)}')

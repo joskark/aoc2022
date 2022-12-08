@@ -1,8 +1,7 @@
 from os import getcwd
-from typing import List
-from copy import deepcopy
 
 path = getcwd()+"/input"
+
 
 def find_marker(line: str, n: int) -> int:
     count = 0
@@ -13,6 +12,7 @@ def find_marker(line: str, n: int) -> int:
             return count + n
         count += 1
         end += 1
+
 
 with open(path, encoding="utf-8") as f:
     line = f.read()
