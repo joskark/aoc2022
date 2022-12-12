@@ -1,7 +1,7 @@
 import os
 from typing import List
 
-input_path = os.getcwd()+"/input"
+input_path = os.getcwd()+"/input.txt"
 
 
 def make_moves(moves: List[(int, int), int], rope_len: int) -> int:

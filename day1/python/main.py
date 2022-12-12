@@ -1,6 +1,6 @@
 import os
 
-path = os.getcwd()+"/input"
+path = os.getcwd()+"/input.txt"
 
 with open(path, encoding="utf-8") as f:
     lines = f.read().split("\n\n")

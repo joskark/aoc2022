@@ -1,7 +1,7 @@
 from os import getcwd
 from typing import List
 
-path = getcwd()+"/input"
+path = getcwd()+"/input.txt"
 
 
 def char_number(character):

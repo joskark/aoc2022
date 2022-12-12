@@ -1,6 +1,6 @@
 from os import getcwd
 
-path = getcwd()+"/input"
+path = getcwd()+"/input.txt"
 
 
 def find_marker(line: str, n: int) -> int:

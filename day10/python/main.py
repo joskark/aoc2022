@@ -1,7 +1,7 @@
 import os
 from typing import List
 
-input_path = os.getcwd()+"/input"
+input_path = os.getcwd()+"/input.txt"
 
 
 def part1(lines: List[str]) -> int:

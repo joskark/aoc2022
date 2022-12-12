@@ -2,7 +2,7 @@ from os import getcwd
 from typing import List
 from copy import deepcopy
 
-path = getcwd()+"/input"
+path = getcwd()+"/input.txt"
 stacks = {
     1: ['D', 'T', 'R', 'B', 'J', 'L', 'W', 'G'],
     2: ['S', 'W', 'C'],

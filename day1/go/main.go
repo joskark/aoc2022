@@ -24,7 +24,7 @@ func sum(array []int) int {
 
 func main() {
 	pwd, _ := os.Getwd()
-	dat, err := os.ReadFile(pwd + "/input")
+	dat, err := os.ReadFile(pwd + "/input.txt")
 	check(err)
 	sdata := string(dat)
 	s := strings.Split(sdata, "\n\n")

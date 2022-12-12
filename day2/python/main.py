@@ -1,6 +1,6 @@
 import os
 
-path = os.getcwd()+"/input"
+path = os.getcwd()+"/input.txt"
 
 d = {'A': 'X', 'B': 'Y', 'C': 'Z'}
 d_points = {'X': 1, 'Y': 2, 'Z': 3}
